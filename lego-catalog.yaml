@@ -7,7 +7,7 @@ Resources:
   legocatalog:
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: lego-catalog
+      FunctionName: lego-catalog-backend
       Handler: index.handler
       Runtime: nodejs8.10
       CodeUri: .
