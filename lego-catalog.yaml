@@ -20,42 +20,7 @@ Resources:
         Api1:
           Type: Api
           Properties:
-            Path: /MyResource
-            Method: ANY
-        Api2:
-          Type: Api
-          Properties:
-            Path: /MyResource
-            Method: ANY
-        Api3:
-          Type: Api
-          Properties:
             Path: /set
-            Method: ANY
-        Api4:
-          Type: Api
-          Properties:
-            Path: /MyResource
-            Method: ANY
-        Api5:
-          Type: Api
-          Properties:
-            Path: /MyResource
-            Method: ANY
-        Api6:
-          Type: Api
-          Properties:
-            Path: /MyResource
-            Method: ANY
-        Api7:
-          Type: Api
-          Properties:
-            Path: /MyResource
-            Method: ANY
-        Api8:
-          Type: Api
-          Properties:
-            Path: /MyResource
             Method: ANY
       Environment:
         Variables:
