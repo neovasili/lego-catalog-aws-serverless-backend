@@ -1,0 +1,16 @@
+version: 0.2
+
+env:
+  variables:
+    S3_BUCKET: "codepipeline-eu-west-1-584072237620"
+
+phases:
+  install:
+    commands:
+      - aws cloudformation package --template-file lego-catalog.yaml --s3-bucket ${S3_BUCKET} --output-template-file outputSamTemplate.yaml
+
+artifacts:
+  type: zip
+  files:
+    - lego-catalog.yaml
+    - outputSamTemplate.yaml
