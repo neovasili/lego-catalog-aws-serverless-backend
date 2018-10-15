@@ -141,7 +141,7 @@ exports.handler = ( event, context, callback ) => {
                             if( data.Item == null ) {
                                 dynamo.putItem( createPostBody( item ), done );
                             } else {
-                                done( new Error( "Item already exists" ) );
+                                done( new Error( "Item already exist" ) );
                             }
                         }
                     } );
