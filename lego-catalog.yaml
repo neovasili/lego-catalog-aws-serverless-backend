@@ -12,8 +12,7 @@ Resources:
       Runtime: nodejs8.10
       CodeUri: .
       Description: >-
-        A simple backend (read/write to DynamoDB) with a RESTful API endpoint
-        using Amazon API Gateway.
+        Testing to update lambda function
       MemorySize: 512
       Timeout: 10
       Role: 'arn:aws:iam::526200438718:role/service-role/microservices-lambda'
