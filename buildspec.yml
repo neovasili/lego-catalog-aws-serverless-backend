@@ -7,7 +7,7 @@ env:
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file lego-catalog.yaml --s3-bucket ${S3_BUCKET} --output-template-file outputSamTemplate.yaml
+      - aws cloudformation package --template-file lego-catalog.yaml --kms-key-id arn:aws:kms:eu-west-1:526200438718:alias/aws/s3 --s3-bucket ${S3_BUCKET} --output-template-file outputSamTemplate.yaml
 
 artifacts:
   type: zip
